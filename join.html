@@ -60,12 +60,22 @@
     var params = new URLSearchParams(window.location.search);
     var raw = params.get("code") || "";
     var code = raw.trim().toUpperCase();
+    var child = (params.get("child") || "").trim().toLowerCase();
     var message = document.getElementById("message");
     var codeNode = document.getElementById("code");
     var open = document.getElementById("open");
     var store = document.getElementById("store");
     var download = document.getElementById("download");
-    if (/^[A-Z0-9]{6,10}$/.test(code)) {
+    if (/^[0-9a-f]{32}$/.test(child)) {
+      message.textContent = "Ouvre KOKON pour rejoindre ton foyer";
+      open.href = "kokon://child/" + child;
+      open.hidden = false;
+      if (APP_STORE_URL.length > 0) {
+        download.href = APP_STORE_URL;
+        store.hidden = false;
+      }
+      window.location.href = "kokon://child/" + child;
+    } else if (/^[A-Z0-9]{6,10}$/.test(code)) {
       message.textContent = "Tu es invité à rejoindre un foyer sur KOKON";
       codeNode.textContent = code;
       codeNode.hidden = false;
