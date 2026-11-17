@@ -53,20 +53,21 @@
       <li>Le prénom.</li>
       <li>L’adresse e-mail (les comptes enfants n’en ont pas).</li>
       <li>L’identifiant du compte.</li>
-      <li>Le contenu créé dans le foyer : messages, planning, courses, stock, repas, goûts et allergies indiqués pour les menus.</li>
+      <li>Le contenu créé dans le foyer : messages, planning, activités, anniversaires, contacts utiles (nounou, médecin…), photos de la galerie, documents, lieux (maison, école…), budget et tirelire, courses, stock, repas, goûts, allergies et régimes.</li>
       <li>La photo d’un ticket de caisse, quand tu en scannes un (voir « Tickets de caisse »).</li>
       <li>La dernière position, seulement si le partage de position est activé (voir « Localisation »).</li>
-      <li>L’historique d’achats de l’abonnement KOKON Premium.</li>
+      <li>La date de ta dernière ouverture de l’app, pour ne pas t’écrire si tu ne l’utilises plus (voir « E-mails »).</li>
+      <li>L’état de l’abonnement KOKON Premium du foyer.</li>
     </ul>
 
     <h2>Âge minimum et comptes enfants</h2>
-    <p>Il faut avoir 15 ans ou plus pour créer un compte KOKON. Un enfant de moins de 15 ans ne crée pas de compte lui-même : c’est un adulte du foyer qui l’ajoute, avec un QR à scanner sur le téléphone de l’enfant. Cet ajout vaut consentement du parent (article 8 du RGPD, article 45 de la loi Informatique et Libertés). Un compte enfant n’a pas d’adresse e-mail et ne reçoit aucun e-mail de KOKON.</p>
+    <p>Il faut avoir 15 ans ou plus pour créer un compte KOKON. Un enfant de moins de 15 ans ne crée pas de compte lui-même : c’est un adulte du foyer, titulaire de l’autorité parentale ou agissant avec son accord, qui l’ajoute, avec un QR à scanner sur le téléphone de l’enfant. Cet ajout vaut consentement du parent (article 8 du RGPD, article 45 de la loi Informatique et Libertés). Un compte enfant n’a pas d’adresse e-mail et ne reçoit aucun e-mail de KOKON.</p>
 
     <h2>Connexion</h2>
     <p>Tu peux créer ton compte avec ton adresse e-mail (un code t’est envoyé), avec Apple ou avec Google.</p>
     <ul>
       <li><strong>Apple</strong> transmet ton adresse e-mail (ou une adresse relais si tu choisis de la masquer) et, si tu l’acceptes, ton nom.</li>
-      <li><strong>Google</strong> transmet ton adresse e-mail et ton nom. KOKON n’en garde que le prénom.</li>
+      <li><strong>Google</strong> transmet ton adresse e-mail, ton nom et l’adresse de ta photo de profil Google. Ces informations sont gardées avec ton compte par notre hébergeur d’authentification (Supabase). KOKON n’affiche que ton prénom.</li>
     </ul>
     <p>Apple et Google gèrent ta connexion chez eux, selon leur propre politique de confidentialité. KOKON ne reçoit jamais ton mot de passe Apple ou Google.</p>
 
@@ -75,34 +76,44 @@
       <li><strong>Faire fonctionner KOKON</strong> (compte, foyer, planning, courses, repas, stock, documents, notifications, scan de ticket, menus) : l’exécution du contrat, c’est-à-dire le service que tu as demandé (article 6.1.b du RGPD).</li>
       <li><strong>E-mails de conseils et nouveautés</strong> : ton consentement (article 6.1.a du RGPD).</li>
       <li><strong>Partage de position</strong> : ton consentement, que tu donnes en l’activant (article 6.1.a du RGPD). Pour un enfant, c’est un adulte du foyer qui le règle.</li>
+      <li><strong>Allergies et régimes</strong> (par exemple sans gluten, halal ou casher) : ces informations peuvent révéler ta santé ou tes convictions religieuses. Base légale : ton consentement explicite (article 9.2.a du RGPD), demandé dans l’app avant de les enregistrer, que tu peux retirer en supprimant ces informations.</li>
       <li><strong>Sécurité et limitation des abus</strong> (par exemple le nombre de scans et de menus par jour) : notre intérêt légitime à protéger le service (article 6.1.f du RGPD).</li>
-      <li><strong>Facturation de KOKON Premium</strong> : obligation légale de conservation des pièces comptables (article 6.1.c du RGPD). Le paiement est géré par Apple, sur l’App Store ; KOKON ne reçoit pas tes coordonnées bancaires.</li>
+      <li><strong>Abonnement KOKON Premium</strong> : l’exécution du contrat (article 6.1.b du RGPD). KOKON garde seulement l’état de l’abonnement du foyer : l’offre, la date de fin, l’identifiant de transaction Apple et le membre qui l’a souscrit. Le paiement est géré par Apple, sur l’App Store ; KOKON ne reçoit pas tes coordonnées bancaires.</li>
     </ul>
 
     <h2>Hébergement</h2>
     <p>Les données du compte et du foyer sont hébergées par Supabase, dans l’Union européenne, à Paris.</p>
 
+    <h2>Fonctions d’IA</h2>
+    <p>Le scan de ticket et le menu par IA sont réservés à KOKON Premium. Avant le premier envoi à l’IA, l’app te demande ton accord. Rien n’est envoyé tant que tu n’as pas accepté.</p>
+
     <h2>Menu par IA</h2>
-    <p>Quand quelqu’un du foyer le demande, KOKON envoie à Anthropic PBC (États-Unis), notre fournisseur d’IA, de quoi composer le menu : le stock du foyer (produits, quantités, dates de péremption), le nombre de personnes à table, les allergies, régimes et goûts indiqués dans le foyer, les plats notés ces deux derniers mois et les envies saisies. Aucun prénom ni adresse e-mail n’est envoyé. Rien n’est envoyé tant que personne n’a demandé le menu. KOKON ne conserve pas cet envoi : seul le menu obtenu est enregistré dans le foyer.</p>
+    <p>Quand quelqu’un du foyer le demande, KOKON envoie à Anthropic PBC (États-Unis), notre fournisseur d’IA, de quoi composer le menu : le stock du foyer (produits, quantités, dates de péremption), le nombre de personnes à table et les portions selon l’appétit de chacun, les allergies, régimes et goûts indiqués dans le foyer, les plats notés ces deux derniers mois, les plats déjà prévus cette semaine, le style de petit-déjeuner, les protéines choisies pour chaque repas et les envies saisies (qui peuvent contenir ce que tu y écris). Aucun prénom ni adresse e-mail n’est envoyé. Rien n’est envoyé tant que personne n’a demandé le menu. KOKON ne conserve pas cet envoi : seul le menu obtenu est enregistré dans le foyer.</p>
 
     <h2>Tickets de caisse</h2>
     <p>Quand tu scannes un ticket de caisse, le téléphone lit d’abord les lignes du ticket. Ensuite, la photo recadrée du ticket (en JPEG) et ces lignes sont envoyées, par notre serveur, à Anthropic PBC (États-Unis), notre fournisseur d’IA. Le seul but est de lister les produits alimentaires du ticket, pour les ajouter à ton stock. Ni la photo ni les lignes ne sont enregistrées ou journalisées par KOKON : elles sont oubliées dès que la liste est renvoyée à ton téléphone.</p>
 
     <h2>Transferts hors de l’Union européenne</h2>
-    <p>Anthropic PBC et Resend, Inc. sont établis aux États-Unis. Ces transferts sont encadrés par les clauses contractuelles types de la Commission européenne. Anthropic traite les données pour notre compte, comme sous-traitant, et ne les utilise pas pour entraîner ses modèles.</p>
+    <ul>
+      <li><strong>Supabase</strong> est une société américaine. Tes données sont hébergées à Paris.</li>
+      <li><strong>Anthropic PBC</strong> (IA) et <strong>Resend, Inc.</strong> (e-mails) sont établis aux États-Unis.</li>
+      <li><strong>Apple</strong> achemine les notifications, avec leur texte (par exemple un extrait de message).</li>
+      <li><strong>GitHub, Inc.</strong> (États-Unis) héberge ce site et reçoit l’adresse IP des visiteurs.</li>
+    </ul>
+    <p>Ces transferts sont encadrés par les clauses contractuelles types de la Commission européenne ou par le cadre de protection des données UE–États-Unis. Anthropic traite les données pour notre compte, comme sous-traitant, et ne les utilise pas pour entraîner ses modèles. Selon ses conditions, Anthropic peut conserver les envois jusqu’à 30 jours pour la sécurité, puis les efface.</p>
 
     <h2>Localisation</h2>
-    <p>Le partage de position est désactivé par défaut, pour tout le monde. Chaque personne l’active elle-même dans le Profil, puis Partage de position. Pour un enfant, c’est un adulte de son foyer qui le règle : l’enfant en est toujours informé, par un écran dédié et par une mention qui reste visible.</p>
+    <p>Le partage de position est désactivé par défaut, pour tout le monde. Chaque personne l’active elle-même dans le Profil, puis Partage de position. Pour un enfant, c’est un adulte de son foyer qui le règle : l’enfant en est toujours informé, par un écran dédié et par une mention qui reste visible. L’adulte qui active le partage peut le verrouiller : l’enfant ne peut alors pas le couper dans KOKON, mais il peut toujours refuser la position dans les Réglages de l’iPhone.</p>
     <ul>
       <li>Ce qui est gardé : seulement la dernière position de chaque personne. KOKON n’enregistre jamais les trajets.</li>
       <li>Qui la voit : les membres du foyer, et personne d’autre.</li>
       <li>« Toujours » : si tu choisis de partager aussi quand KOKON est fermé, ta dernière position reste à jour, et le foyer peut être prévenu quand quelqu’un arrive ou part d’un lieu du foyer (maison, école…). Cette option est demandée à part, avec une explication, jamais au premier lancement.</li>
       <li>Le journal des lieux (arrivées et départs) est effacé automatiquement après 30 jours.</li>
-      <li>Pour couper : dans KOKON (Profil, Partage de position), ou dans les Réglages de l’iPhone (KOKON, Position). Couper le partage efface ta dernière position.</li>
+      <li>Pour couper : dans KOKON (Profil, Partage de position), sauf si un adulte l’a verrouillé pour un enfant, ou dans les Réglages de l’iPhone (KOKON, Position). Couper le partage efface ta dernière position.</li>
     </ul>
 
     <h2>Documents</h2>
-    <p>Les documents ajoutés (PDF, photos, scans) sont stockés chez Supabase, dans l’Union européenne. Ils sont visibles selon le dossier : le dossier du foyer pour les adultes du foyer, un dossier personnel pour la personne concernée, et les parents pour le dossier d’un enfant. Sur l’iPhone, l’onglet est protégé par Face ID ou par le code de l’iPhone. Face ID est géré par iOS : KOKON ne reçoit ni ton visage ni ton empreinte. Les documents sont supprimés avec le compte.</p>
+    <p>Les documents ajoutés (PDF, photos, scans) sont stockés chez Supabase, dans l’Union européenne. Ils sont visibles selon le dossier : le dossier du foyer pour les adultes du foyer, un dossier personnel pour la personne concernée, et les parents pour le dossier d’un enfant. Sur l’iPhone, l’onglet est protégé par Face ID ou par le code de l’iPhone. Face ID est géré par iOS : KOKON ne reçoit ni ton visage ni ton empreinte. Tes documents personnels sont supprimés avec ton compte ; ceux du dossier du foyer restent au foyer.</p>
 
     <h2>Notifications et argent de poche</h2>
     <p>Le jeton de notification de ton iPhone sert seulement à t’envoyer les notifications du foyer que tu as activées (messages, tâches, tirelire, membres, lieux, péremption). Il est retiré quand tu te déconnectes. Les montants de la tirelire et de l’argent de poche sont des données internes au foyer : il n’y a aucun lien avec une banque ni aucun paiement réel.</p>
@@ -116,11 +127,18 @@
     <p><strong>Prestataire.</strong> Les e-mails sont envoyés par Resend (Resend, Inc., États-Unis), qui reçoit ton adresse et le contenu du message pour l’acheminer. Ce transfert est encadré par les clauses contractuelles types de la Commission européenne.</p>
     <p><strong>Durées de conservation.</strong> Ton accord (date et version) : tant que ton compte existe. Liste des e-mails de conseils envoyés : 3 ans. Affichages de l’écran Premium : 12 mois. Tout est supprimé avec ton compte.</p>
 
+    <h2>Durées de conservation</h2>
+    <p>Les données du compte et du foyer sont gardées tant que le compte existe. Les durées plus courtes sont indiquées dans chaque partie (journal des lieux, e-mails, écran Premium).</p>
+
+    <h2>Journaux</h2>
+    <p>Les fonctions de KOKON ne journalisent que des compteurs techniques (nombre d’envois, durées, erreurs), sans ton prénom ni ton adresse e-mail. Notre hébergeur garde des journaux techniques, dont l’adresse IP, pour la sécurité, pendant une durée limitée.</p>
+
     <h2>Prestataires</h2>
     <ul>
       <li><strong>Supabase</strong> : hébergement des données du compte, du foyer et des documents. Union européenne (Paris).</li>
       <li><strong>Anthropic PBC</strong> : lecture des tickets de caisse et menus par IA, à ta demande. États-Unis.</li>
       <li><strong>Resend, Inc.</strong> : envoi des e-mails. États-Unis.</li>
+      <li><strong>GitHub, Inc.</strong> : hébergement de ce site. États-Unis.</li>
       <li><strong>Apple</strong> : connexion avec Apple, paiement de KOKON Premium sur l’App Store et acheminement des notifications. <strong>Google</strong> : connexion avec Google. Apple et Google agissent pour leur propre compte, selon leur propre politique de confidentialité.</li>
     </ul>
 
@@ -133,10 +151,12 @@
       <li>d’en demander la limitation ;</li>
       <li>de t’opposer à un traitement fondé sur notre intérêt légitime ;</li>
       <li>de les récupérer dans un format lisible pour les emporter ailleurs (portabilité) ;</li>
-      <li>de retirer ton consentement à tout moment (e-mails de conseils, partage de position), sans effet sur ce qui a été fait avant ;</li>
+      <li>de retirer ton consentement à tout moment (e-mails de conseils, partage de position, allergies et régimes), sans effet sur ce qui a été fait avant (si un adulte a verrouillé le partage de position d’un enfant, c’est lui qui le coupe dans KOKON ; l’enfant peut toujours refuser la position dans les Réglages de l’iPhone) ;</li>
       <li>de donner des directives sur le sort de tes données après ton décès.</li>
     </ul>
-    <p><strong>Comment faire.</strong> Depuis le Profil de l’app, tu peux exporter tes données ou supprimer ton compte. La suppression retire le compte et les données qui lui sont attachées. Tu peux corriger ton prénom et ton adresse dans le Profil. Pour toute autre demande, écris à <a href="mailto:contact@getkokon.app">contact@getkokon.app</a> : nous répondons sous un mois.</p>
+    <p><strong>Comment faire.</strong> Depuis le Profil, tu peux exporter une copie de tes principales données (profil, foyers, planning, messages, propositions, courses, stock, repas). Pour une copie complète (documents, photos, préférences alimentaires…), écris à <a href="mailto:contact@getkokon.app">contact@getkokon.app</a>.</p>
+    <p>Depuis le Profil, tu peux aussi supprimer ton compte. La suppression efface ton compte, tes messages, tes documents personnels, ta position et tes préférences. Ce que tu as ajouté au foyer (planning, courses, repas, documents et photos du foyer) reste pour les autres membres, sans ton nom ; si tu es le dernier membre, le foyer entier est supprimé.</p>
+    <p>Tu peux corriger ton prénom et ton adresse dans le Profil. Pour toute autre demande, écris à <a href="mailto:contact@getkokon.app">contact@getkokon.app</a> : nous répondons sous un mois.</p>
     <p>Si tu estimes que tes droits ne sont pas respectés, tu peux adresser une réclamation à la CNIL : <a href="https://www.cnil.fr/fr/plaintes">cnil.fr</a>.</p>
 
     <h2>Contact</h2>

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
   <meta name="referrer" content="no-referrer">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'sha256-0I9ouN13XP9JY9cRMGdx8jrvg6MzDRY0JyGB2SB8Yow='; script-src 'sha256-v00mnQITT4mcktkvo/Lh13QxDI/AIKv5VgqOVPUIMD4='; connect-src https://bgpxbhiassyxyhccbxfg.supabase.co; base-uri 'none'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'sha256-uK9NSQ2f4FiO61D9qitpjAk/kMbbuifxCGfF0YobiYg='; script-src 'sha256-v00mnQITT4mcktkvo/Lh13QxDI/AIKv5VgqOVPUIMD4='; connect-src https://bgpxbhiassyxyhccbxfg.supabase.co; base-uri 'none'; form-action 'none'">
   <title>Désinscription — KOKON</title>
   <style>
     :root { color-scheme: light; }
@@ -49,6 +49,13 @@
       cursor: pointer;
     }
     button[disabled] { opacity: 0.6; cursor: default; }
+    footer {
+      margin-top: 40px;
+      padding-top: 16px;
+      border-top: 1px solid #D8C9B6;
+      font-size: 0.9rem;
+    }
+    footer a { color: #5E5750; margin: 0 0.5rem; }
     [hidden] { display: none !important; }
   </style>
 </head>
@@ -59,6 +66,10 @@
     <h1 id="title">Ne plus recevoir les e-mails de KOKON ?</h1>
     <p id="message" hidden></p>
     <button id="confirm" type="button">Me désinscrire</button>
+    <footer>
+      <a href="privacy.html">Confidentialité</a>
+      <a href="mentions-legales.html">Mentions légales</a>
+    </footer>
   </main>
   <script>
     var ENDPOINT = "https://bgpxbhiassyxyhccbxfg.supabase.co/functions/v1/unsubscribe";
