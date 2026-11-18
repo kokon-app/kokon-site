@@ -3,6 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'sha256-iyyRokW9h474ZlVP2VvaGwAOvV3QVdP3ywpyHGFTp/I='; script-src 'sha256-+eAxfUvVIwiukPUZlD594yYVbdQnEqh6+cGD0ggdovc='; base-uri 'none'; form-action 'none'">
   <title>Rejoindre un foyer sur KOKON</title>
   <style>
     :root { color-scheme: light; }
@@ -42,6 +45,13 @@
     }
     .store { margin-top: 16px; }
     .store a { color: #5E5750; }
+    footer {
+      margin-top: 40px;
+      padding-top: 16px;
+      border-top: 1px solid #D8C9B6;
+      font-size: 0.9rem;
+    }
+    footer a { color: #5E5750; margin: 0 0.5rem; }
     [hidden] { display: none !important; }
   </style>
 </head>
@@ -54,6 +64,10 @@
     <p id="code" class="code" hidden></p>
     <a id="open" class="open" hidden>Ouvrir KOKON</a>
     <p id="store" class="store" hidden><a id="download">Télécharger KOKON</a></p>
+    <footer>
+      <a href="privacy.html">Confidentialité</a>
+      <a href="mentions-legales.html">Mentions légales</a>
+    </footer>
   </main>
   <script>
     var APP_STORE_URL = "";

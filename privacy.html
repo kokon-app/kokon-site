@@ -3,90 +3,222 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Confidentialité — KOKON</title>
-  <style>
-    body {
-      margin: 0;
-      background: #EDE3D6;
-      color: #1E1E1E;
-      font: 17px/1.5 -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
-    }
-    main {
-      max-width: 40rem;
-      margin: 0 auto;
-      padding: 2.5rem 1.25rem 4rem;
-    }
-    h1 {
-      font-size: 1.75rem;
-      font-weight: 600;
-      margin: 0 0 0.5rem;
-    }
-    h2 {
-      font-size: 1.15rem;
-      font-weight: 600;
-      margin: 2rem 0 0.5rem;
-    }
-    p, li { margin: 0.4rem 0; }
-    a { color: #9E4A22; }
-  </style>
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; base-uri 'none'; form-action 'none'">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#F7EEE4">
+  <meta name="robots" content="index, follow">
+  <title>Politique de confidentialité — KOKON</title>
+  <meta name="description" content="Quelles données KOKON utilise, pourquoi, combien de temps, chez quels prestataires, et comment exercer tes droits (RGPD).">
+  <meta property="og:title" content="Politique de confidentialité — KOKON">
+  <meta property="og:description" content="Quelles données KOKON utilise, pourquoi, combien de temps, chez quels prestataires, et comment exercer tes droits (RGPD).">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://getkokon.app/privacy.html">
+  <meta property="og:image" content="https://getkokon.app/assets/img/table.jpg">
+  <link rel="canonical" href="https://getkokon.app/privacy.html">
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
-  <main>
-    <h1>Confidentialité</h1>
-    <p><small>Dernière mise à jour : 5 novembre 2026.</small></p>
-    <p>KOKON est l’app du foyer : planning, courses, repas et stock. Cette page décrit les données utilisées pour faire fonctionner l’app. KOKON ne suit personne et ne vend pas ces données.</p>
+  <a class="sr" href="#principal">Aller au contenu</a>
+  <header class="entete">
+    <div class="contenu">
+      <a class="logo" href="./" aria-label="KOKON, accueil">
+        <img src="assets/logo.png" alt="" width="34" height="34">
+        <span>KOKON</span>
+      </a>
+      <nav class="menu" aria-label="Navigation principale">
+        <a class="optionnel" href="./#fonctions">Fonctions</a>
+        <a href="./#tarifs">Tarifs</a>
+        <a href="support.html">Aide</a>
+      </nav>
+    </div>
+  </header>
+  <main id="principal">
+    <article class="page">
+      <div class="contenu">
+        <h1>Politique de confidentialité</h1>
+        <p class="maj">Dernière mise à jour : 17 novembre 2026.</p>
+        <p class="intro">KOKON est l’app du foyer : planning, courses, repas et stock. Cette page décrit les données utilisées pour faire fonctionner l’app. KOKON ne suit personne et ne vend pas ces données.</p>
+        <p>Responsable du traitement : Flavio Freitas, entrepreneur individuel, éditeur de KOKON (coordonnées dans la partie « Contact » en bas de cette page et dans les <a href="mentions-legales.html">mentions légales</a>).</p>
 
-    <h2>Données utilisées</h2>
-    <p>Toutes sont liées au compte, sans suivi, pour le fonctionnement de l’app.</p>
-    <ul>
-      <li>Le prénom.</li>
-      <li>L’adresse e-mail.</li>
-      <li>L’identifiant du compte.</li>
-      <li>Le contenu créé dans le foyer : messages, planning, courses et stock.</li>
-      <li>La photo d’un ticket de caisse. Elle est lue sur l’iPhone pour remplir la liste, et elle n’est pas envoyée.</li>
-      <li>L’historique d’achats de l’abonnement KOKON Premium.</li>
-    </ul>
+        <h2>Données utilisées</h2>
+        <p>Toutes sont liées au compte, sans suivi, pour le fonctionnement de l’app.</p>
+        <ul>
+          <li>Le prénom.</li>
+          <li>L’adresse e-mail (les comptes enfants n’en ont pas).</li>
+          <li>L’identifiant du compte.</li>
+          <li>Le contenu créé dans le foyer : messages, planning, activités, anniversaires, contacts utiles (nounou, médecin…), photos de la galerie, documents, lieux (maison, école…), budget et tirelire, courses, stock, repas, goûts, allergies et régimes.</li>
+          <li>La photo d’un ticket de caisse, quand tu en scannes un (voir « Tickets de caisse »).</li>
+          <li>La dernière position, seulement si le partage de position est activé (voir « Localisation »).</li>
+          <li>La date de ta dernière ouverture de l’app, pour ne pas t’écrire si tu ne l’utilises plus (voir « E-mails »).</li>
+          <li>L’état de l’abonnement KOKON Premium du foyer.</li>
+          <li>Les accords que tu as donnés (fonctions d’IA ; allergies et régimes) et leur date.</li>
+          <li>Pour un compte enfant : la confirmation, par l’adulte qui l’a ajouté, qu’il est son parent ou son tuteur légal, et sa date.</li>
+          <li>Les signalements faits dans l’app (« Signaler » un foyer, un message ou une photo) : qui signale, quoi, quand, et la suite donnée.</li>
+        </ul>
 
-    <h2>Hébergement</h2>
-    <p>Les données du compte et du foyer sont hébergées par Supabase, dans l’Union européenne, à Paris.</p>
+        <h2>Âge minimum et comptes enfants</h2>
+        <p>Il faut avoir 15 ans ou plus pour créer un compte KOKON. Un enfant de moins de 15 ans ne crée pas de compte lui-même : c’est un adulte du foyer, titulaire de l’autorité parentale ou agissant avec son accord, qui l’ajoute, avec un QR à scanner sur le téléphone de l’enfant. Avant d’afficher ce QR, l’adulte confirme être le parent ou le tuteur légal de l’enfant ; cette confirmation est gardée avec sa date. Un adulte peut créer 3 QR enfant par jour au plus, et KOKON est alerté en cas de volume inhabituel. Cet ajout vaut consentement du parent (article 8 du RGPD, article 45 de la loi Informatique et Libertés). Un compte enfant n’a pas d’adresse e-mail et ne reçoit aucun e-mail de KOKON. Il ne peut ni créer de foyer, ni quitter un foyer seul, ni devenir administrateur.</p>
 
-    <h2>Menu par IA</h2>
-    <p>Quand quelqu’un du foyer le demande, le stock du foyer est envoyé à Anthropic pour proposer un menu. KOKON ne conserve pas cet envoi au-delà du menu affiché. Rien n’est envoyé tant que personne n’a demandé le menu.</p>
-    <p>Quand tu scannes un ticket de caisse, seul le texte lu sur le téléphone (pas la photo) est envoyé à notre fournisseur d’IA, Anthropic, pour en extraire la liste des produits. Il n’est pas conservé.</p>
+        <h2>Enfant dans plusieurs foyers et signalements</h2>
+        <p>Un enfant peut appartenir à plusieurs foyers (par exemple en garde alternée).</p>
+        <ul>
+          <li><strong>Nouveau foyer.</strong> L’enfant y voit tout de suite le planning, les repas et la discussion. Sa position n’y est partagée qu’après l’accord d’un administrateur de chacun de ses autres foyers, ou automatiquement 48 heures après la demande sans réponse. Un refus la garde cachée. Les administrateurs des autres foyers sont prévenus par notification et par e-mail, avec le prénom de l’enfant et le nom du nouveau foyer.</li>
+          <li><strong>Ce que voit l’enfant.</strong> Une mention permanente lui indique les foyers qui voient sa position.</li>
+          <li><strong>Reconnexion.</strong> Quand un enfant est reconnecté avec le QR d’un foyer, ses autres foyers sont mis en pause jusqu’à ce qu’un de leurs administrateurs les réactive. Une appartenance en pause ne donne accès à rien, et la position n’y est pas visible.</li>
+          <li><strong>Déconnexion.</strong> Les adultes du foyer sont prévenus tout de suite quand l’enfant se déconnecte ou coupe le partage de sa position.</li>
+          <li><strong>Signaler.</strong> L’enfant peut signaler un foyer : sa position est aussitôt coupée pour ce foyer, les administrateurs de ses autres foyers sont prévenus et KOKON reçoit une alerte pour examiner la situation. Tout membre peut aussi signaler un message ou une photo. L’alerte envoyée à KOKON ne contient que des identifiants techniques, pas le contenu du message. Base légale : notre intérêt légitime à protéger les mineurs et les utilisateurs (article 6.1.f du RGPD).</li>
+          <li><strong>Conservation.</strong> Les signalements sont gardés <span class="todo">[À VALIDER : 1 an après leur clôture, purge automatique à ajouter dans le code]</span>.</li>
+        </ul>
 
-    <h2>Tickets de caisse</h2>
-    <p>Le scan du ticket se fait sur l’iPhone. La photo ne quitte pas l’appareil.</p>
+        <h2>Connexion</h2>
+        <p>Tu peux créer ton compte avec ton adresse e-mail (un code t’est envoyé), avec Apple ou avec Google.</p>
+        <ul>
+          <li><strong>Apple</strong> transmet ton adresse e-mail (ou une adresse relais si tu choisis de la masquer) et, si tu l’acceptes, ton nom.</li>
+          <li><strong>Google</strong> transmet ton adresse e-mail, ton nom et l’adresse de ta photo de profil Google. Ces informations sont gardées avec ton compte par notre hébergeur d’authentification (Supabase). KOKON n’affiche que ton prénom.</li>
+        </ul>
+        <p>Apple et Google gèrent ta connexion chez eux, selon leur propre politique de confidentialité. KOKON ne reçoit jamais ton mot de passe Apple ou Google.</p>
 
-    <h2>Localisation</h2>
-    <p>Le partage de position est désactivé par défaut, pour tout le monde. Chaque personne l’active elle-même dans le Profil, puis Partage de position. Un parent peut l’activer pour un enfant de son foyer : l’enfant en est toujours informé, par un écran dédié et par une mention qui reste visible.</p>
-    <ul>
-      <li>Ce qui est gardé : seulement la dernière position de chaque personne. KOKON n’enregistre jamais les trajets.</li>
-      <li>Qui la voit : les membres du foyer, et personne d’autre.</li>
-      <li>« Toujours » : si tu choisis de partager aussi quand KOKON est fermé, ta dernière position reste à jour, et le foyer peut être prévenu quand quelqu’un arrive ou part d’un lieu du foyer (maison, école…). Cette option est demandée à part, avec une explication, jamais au premier lancement.</li>
-      <li>Le journal des lieux (arrivées et départs) est effacé automatiquement après 30 jours.</li>
-      <li>Pour couper : dans KOKON (Profil, Partage de position), ou dans les Réglages de l’iPhone (KOKON, Position). Couper le partage efface ta dernière position.</li>
-    </ul>
+        <h2>Pourquoi, et sur quelle base légale</h2>
+        <ul>
+          <li><strong>Faire fonctionner KOKON</strong> (compte, foyer, planning, courses, repas, stock, documents, notifications, scan de ticket, menus) : l’exécution du contrat, c’est-à-dire le service que tu as demandé (article 6.1.b du RGPD).</li>
+          <li><strong>E-mails de conseils et nouveautés</strong> : ton consentement (article 6.1.a du RGPD).</li>
+          <li><strong>Partage de position</strong> : le consentement (article 6.1.a du RGPD). Un adulte le donne en l’activant lui-même. Pour un enfant, c’est l’administrateur du foyer qui le donne, en tant que titulaire de l’autorité parentale ou en agissant avec son accord.</li>
+          <li><strong>Allergies et régimes</strong> (par exemple sans gluten, halal ou casher) : ces informations peuvent révéler ta santé ou tes convictions religieuses. Base légale : ton consentement explicite (article 9.2.a du RGPD). L’app le demande à un adulte avant d’enregistrer ces informations, et en garde la date, enregistrée aussi sur nos serveurs pour pouvoir la prouver. Tu peux retirer ton accord dans le Profil, rubrique Données et IA : les informations déjà indiquées restent tant que tu ne les supprimes pas. Un enfant ne donne pas cet accord : c’est un adulte du foyer qui ajoute ses allergies et régimes.</li>
+          <li><strong>Sécurité et limitation des abus</strong> (par exemple le nombre de scans et de menus par jour, de messages par minute ou de QR enfant par jour, et les signalements) : notre intérêt légitime à protéger le service (article 6.1.f du RGPD).</li>
+          <li><strong>Abonnement KOKON Premium</strong> : l’exécution du contrat (article 6.1.b du RGPD). KOKON garde seulement l’état de l’abonnement du foyer : l’offre, la date de fin, l’identifiant de transaction Apple et le membre qui l’a souscrit. Le paiement est géré par Apple, sur l’App Store ; KOKON ne reçoit pas tes coordonnées bancaires.</li>
+        </ul>
 
-    <h2>Documents</h2>
-    <p>Les documents ajoutés (PDF, photos, scans) sont stockés chez Supabase, dans l’Union européenne. Ils sont visibles selon le dossier : le dossier du foyer pour les adultes du foyer, un dossier personnel pour la personne concernée, et les parents pour le dossier d’un enfant. Sur l’iPhone, l’onglet est protégé par Face ID ou par le code de l’iPhone. Face ID est géré par iOS : KOKON ne reçoit ni ton visage ni ton empreinte. Les documents sont supprimés avec le compte.</p>
+        <h2>Hébergement</h2>
+        <p>Les données du compte et du foyer, les photos et les documents sont hébergés par Supabase, sur des serveurs Amazon Web Services situés à Paris (France, région eu-west-3).</p>
 
-    <h2>Notifications et argent de poche</h2>
-    <p>Le jeton de notification de ton iPhone sert seulement à t’envoyer les notifications du foyer que tu as activées (messages, tâches, tirelire, membres, lieux, péremption). Il est retiré quand tu te déconnectes. Les montants de la tirelire et de l’argent de poche sont des données internes au foyer : il n’y a aucun lien avec une banque ni aucun paiement réel.</p>
+        <h2>Fonctions d’IA</h2>
+        <p>Le scan de ticket et le menu par IA sont réservés à KOKON Premium et aux adultes du foyer. Avant ton premier envoi à l’IA, l’app te demande ton accord (une fois par compte sur chaque iPhone) et en garde la date. Sans cet accord, rien ne part à l’IA quand tu utilises ces fonctions : le ticket est alors lu sur le téléphone seulement. Le menu utilise les informations de tout le foyer (dont les allergies et régimes de chacun) quand un adulte qui a donné son accord le demande. Tu peux retirer ton accord dans le Profil, rubrique Données et IA.</p>
 
-    <h2>E-mails</h2>
-    <p><strong>E-mails liés à ton compte.</strong> KOKON t’envoie les e-mails nécessaires au service : le code de création de compte, de changement de mot de passe ou d’adresse, un message de bienvenue à la création du foyer, la confirmation de l’activation de Premium (une seule fois par foyer) et la confirmation de la suppression de ton compte. Ils ne contiennent aucune publicité. Base légale : l’exécution du service que tu as demandé.</p>
-    <p><strong>Conseils et nouveautés.</strong> Seulement si tu as coché « Recevoir des conseils et des nouveautés de KOKON par e-mail » (à l’inscription ou dans Profil, Notifications). La case est décochée par défaut. Nous gardons la date de ton accord et la version du texte accepté, comme preuve. Base légale : ton consentement (article L34-5 du code des postes et des communications électroniques, article 6.1.a du RGPD). Ce que tu peux recevoir : une invitation à ajouter l’autre adulte du foyer, une aide pour le premier menu, une présentation de Premium, un point si tu n’as pas ouvert l’app depuis deux semaines, puis une dernière question si tu ne reviens pas. Jamais plus d’un e-mail tous les 3 jours, ni plus de 4 par mois. Aucun e-mail de ce type n’est envoyé à un enfant ni à un compte sans adresse. Les envois s’arrêtent d’eux-mêmes après 3 ans sans utiliser l’app.</p>
-    <p><strong>Pour arrêter</strong> : le lien « Se désinscrire » en bas de chaque e-mail, le bouton de désinscription de ta messagerie, ou la case dans l’app. L’arrêt est immédiat et ne change rien à ton compte.</p>
-    <p><strong>Écran Premium.</strong> Quand l’écran Premium s’affiche à un adulte d’un foyer gratuit, l’app enregistre l’heure, ton compte et le foyer (au plus une fois par heure). Cela sert seulement à choisir le moment de l’e-mail sur Premium, si tu as accepté les conseils. Ces lignes sont effacées après 12 mois.</p>
-    <p><strong>Aucun suivi.</strong> Nos e-mails ne contiennent ni pixel ni suivi des ouvertures ou des clics. Les liens vers l’app indiquent seulement de quel e-mail ils viennent, sans t’identifier.</p>
-    <p><strong>Prestataire.</strong> Les e-mails sont envoyés par Resend (Resend, Inc., États-Unis), qui reçoit ton adresse et le contenu du message pour l’acheminer. Ce transfert est encadré par les clauses contractuelles types de la Commission européenne.</p>
-    <p><strong>Durées de conservation.</strong> Ton accord (date et version) : tant que ton compte existe. Liste des e-mails de conseils envoyés : 3 ans. Affichages de l’écran Premium : 12 mois. Tout est supprimé avec ton compte.</p>
+        <h2>Menu par IA</h2>
+        <p>Quand un adulte du foyer qui a donné son accord le demande, KOKON envoie à Anthropic PBC (États-Unis), notre fournisseur d’IA, de quoi composer le menu : le stock du foyer (produits, quantités, dates de péremption), le nombre de personnes à table et les portions selon l’appétit de chacun, les allergies, régimes et goûts indiqués dans le foyer, les plats notés ces deux derniers mois, les plats déjà prévus cette semaine, le style de petit-déjeuner, les protéines choisies pour chaque repas et les envies saisies (qui peuvent contenir ce que tu y écris). Aucun prénom ni adresse e-mail n’est envoyé. Rien n’est envoyé tant que personne n’a demandé le menu. KOKON ne conserve pas cet envoi : seul le menu obtenu est enregistré dans le foyer.</p>
 
-    <h2>Tes droits</h2>
-    <p>Depuis le Profil de l’app, tu peux exporter tes données ou supprimer ton compte. La suppression retire le compte et les données qui lui sont attachées.</p>
+        <h2>Tickets de caisse</h2>
+        <p>Quand tu scannes un ticket de caisse, le téléphone lit d’abord les lignes du ticket. Ensuite, la photo recadrée du ticket (en JPEG) et ces lignes sont envoyées, par notre serveur, à Anthropic PBC (États-Unis), notre fournisseur d’IA. Le seul but est de lister les produits alimentaires du ticket, pour les ajouter à ton stock. Ni la photo ni les lignes ne sont enregistrées ou journalisées par KOKON : elles sont oubliées dès que la liste est renvoyée à ton téléphone. Pour te prévenir si tu scannes deux fois le même ticket, ton iPhone garde 7 jours la date et le total du ticket (ou, à défaut, le nom des produits).</p>
 
-    <h2>Contact</h2>
-    <p>Une question sur tes données : <a href="mailto:contact@getkokon.app">contact@getkokon.app</a>. Éditeur : Flavio Freitas, entrepreneur individuel, SIRET 991 966 904 00039, 6 rue d’Armaillé, 75017 Paris. Tu peux aussi saisir la CNIL (cnil.fr).</p>
+        <h2>Transferts hors de l’Union européenne</h2>
+        <ul>
+          <li><strong>Supabase</strong> (Supabase Pte. Ltd, Singapour, filiale de Supabase, Inc., États-Unis) : tes données sont stockées à Paris, mais son équipe peut y accéder depuis l’étranger pour le support et la maintenance.</li>
+          <li><strong>Anthropic PBC</strong> (IA) et <strong>Resend</strong> (Plus Five Five, Inc., e-mails) sont établis aux États-Unis.</li>
+          <li><strong>Apple</strong> achemine les notifications, avec leur contenu (par exemple un extrait de message, le prénom de l’expéditeur ou un lieu du foyer).</li>
+          <li><strong>GitHub, Inc.</strong> (États-Unis) héberge ce site et reçoit l’adresse IP des visiteurs.</li>
+        </ul>
+        <p>Ces transferts sont encadrés par les clauses contractuelles types de la Commission européenne ou par le cadre de protection des données UE–États-Unis. Anthropic traite les données pour notre compte, comme sous-traitant, et ne les utilise pas pour entraîner ses modèles. Selon ses conditions, Anthropic peut conserver les envois jusqu’à 30 jours pour la sécurité, puis les efface.</p>
+
+        <h2>Localisation</h2>
+        <p>Le partage de position fait partie de KOKON Premium. Il est désactivé par défaut, pour tout le monde. Un adulte l’active lui-même dans le Profil, puis Partage de position. Un enfant ne peut pas l’activer lui-même : seul l’administrateur du foyer l’active pour lui, et l’enfant en est toujours informé, par un écran dédié et par une mention qui reste visible. L’administrateur peut aussi le verrouiller. L’enfant peut couper le partage dans KOKON, sauf s’il est verrouillé, et il peut toujours refuser la position dans les Réglages de l’iPhone.</p>
+        <ul>
+          <li>Ce qui est gardé : seulement la dernière position de chaque personne. KOKON n’enregistre jamais les trajets.</li>
+          <li>Qui la voit : les membres du foyer où elle est partagée, et personne d’autre. Pour un enfant présent dans plusieurs foyers, voir « Enfant dans plusieurs foyers ».</li>
+          <li>« Toujours » : si tu choisis de partager aussi quand KOKON est fermé, ta dernière position reste à jour, et le foyer peut être prévenu quand quelqu’un arrive ou part d’un lieu du foyer (maison, école…). Cette option est demandée à part, avec une explication, jamais au premier lancement.</li>
+          <li>Le journal des lieux (arrivées et départs) est effacé automatiquement après 30 jours.</li>
+          <li>Pour couper : dans KOKON (Profil, Partage de position), sauf si l’administrateur du foyer l’a verrouillé pour un enfant, ou dans les Réglages de l’iPhone (KOKON, Position). Couper le partage efface ta dernière position.</li>
+        </ul>
+
+        <h2>Documents</h2>
+        <p>Les documents ajoutés (PDF, photos, scans) sont stockés chez Supabase, dans l’Union européenne. Ils sont visibles selon le dossier : le dossier du foyer pour les adultes du foyer, un dossier personnel pour la personne concernée, et les parents pour le dossier d’un enfant. Sur l’iPhone, l’onglet est protégé par Face ID ou par le code de l’iPhone. Face ID est géré par iOS : KOKON ne reçoit ni ton visage ni ton empreinte. Tes documents personnels sont supprimés avec ton compte ; ceux du dossier du foyer restent au foyer.</p>
+
+        <h2>Notifications et argent de poche</h2>
+        <p>Le jeton de notification de ton iPhone sert seulement à t’envoyer les notifications du foyer que tu as activées (messages, tâches, tirelire, membres, lieux, péremption). Il est retiré quand tu te déconnectes. Les montants de la tirelire et de l’argent de poche sont des données internes au foyer : il n’y a aucun lien avec une banque ni aucun paiement réel.</p>
+
+        <h2>E-mails</h2>
+        <p><strong>E-mails liés à ton compte.</strong> KOKON t’envoie les e-mails nécessaires au service : le code de création de compte, de changement de mot de passe ou d’adresse, un message de bienvenue à la création du foyer, la confirmation de l’activation de Premium (une seule fois par foyer), la confirmation de la suppression de ton compte et, pour un administrateur, l’avis qu’un enfant de son foyer a rejoint un autre foyer (avec la demande de partage de sa position). Ils ne contiennent aucune publicité. Base légale : l’exécution du service que tu as demandé.</p>
+        <p><strong>Conseils et nouveautés.</strong> Seulement si tu as coché « Recevoir des conseils et des nouveautés de KOKON par e-mail » (à l’inscription ou dans Profil, Notifications). La case est décochée par défaut. Nous gardons la date de ton accord et la version du texte accepté, comme preuve. Base légale : ton consentement (article L34-5 du code des postes et des communications électroniques, article 6.1.a du RGPD). Ce que tu peux recevoir : une invitation à ajouter l’autre adulte du foyer, une aide pour le premier menu, une présentation de Premium, un point si tu n’as pas ouvert l’app depuis deux semaines, puis une dernière question si tu ne reviens pas. Jamais plus d’un e-mail tous les 3 jours, ni plus de 4 par mois. Aucun e-mail de ce type n’est envoyé à un enfant ni à un compte sans adresse. Les envois s’arrêtent d’eux-mêmes après 3 ans sans utiliser l’app.</p>
+        <p><strong>Pour arrêter</strong> : le lien « Se désinscrire » en bas de chaque e-mail, le bouton de désinscription de ta messagerie, ou la case dans l’app. L’arrêt est immédiat et ne change rien à ton compte.</p>
+        <p><strong>Écran Premium.</strong> Quand l’écran Premium s’affiche à un adulte d’un foyer gratuit, l’app enregistre l’heure, ton compte et le foyer (au plus une fois par heure). Cela sert seulement à choisir le moment de l’e-mail sur Premium, si tu as accepté les conseils. Ces lignes sont effacées après 12 mois.</p>
+        <p><strong>Aucun suivi.</strong> Nos e-mails ne contiennent ni pixel ni suivi des ouvertures ou des clics. Les liens vers l’app indiquent seulement de quel e-mail ils viennent, sans t’identifier.</p>
+        <p><strong>Prestataire.</strong> Les e-mails sont envoyés par Resend (Resend, Inc., États-Unis), qui reçoit ton adresse et le contenu du message pour l’acheminer. Ce transfert est encadré par les clauses contractuelles types de la Commission européenne.</p>
+        <p><strong>Durées de conservation.</strong> Ton accord (date et version) : tant que ton compte existe. Liste des e-mails de conseils envoyés : 3 ans. Affichages de l’écran Premium : 12 mois. Tout est supprimé avec ton compte.</p>
+
+        <h2>Durées de conservation</h2>
+        <p>Les données du compte et du foyer sont gardées tant que le compte existe. Les durées plus courtes sont indiquées dans chaque partie (journal des lieux, e-mails, écran Premium).</p>
+
+        <h2>Journaux</h2>
+        <p>Les fonctions de KOKON journalisent des compteurs techniques (nombre d’envois, durées, erreurs, type de règle appliquée), sans ton prénom, ton adresse e-mail ni le détail de tes allergies. Notre hébergeur garde des journaux techniques, dont l’adresse IP, pour la sécurité, pendant une durée limitée.</p>
+
+        <h2>Prestataires et destinataires</h2>
+        <p>Nous ne vendons ni ne louons tes données. Seuls les prestataires ci-dessous en reçoivent, chacun pour sa mission. Les sous-traitants agissent sur nos instructions, avec un contrat conforme à l’article 28 du RGPD.</p>
+        <div class="tableau">
+          <table>
+            <thead><tr><th>Prestataire</th><th>Rôle</th><th>Données</th><th>Lieu</th><th>Encadrement</th></tr></thead>
+            <tbody>
+              <tr><td>Supabase Pte. Ltd (Singapour), sur Amazon Web Services</td><td>Hébergement du compte, du foyer, des photos et documents ; authentification ; envoi des notifications et e-mails par nos fonctions</td><td>Toutes les données de l’app</td><td>Stockage à Paris (France) ; accès possible depuis Singapour et les États-Unis</td><td>Sous-traitant, clauses contractuelles types</td></tr>
+              <tr><td>Anthropic PBC</td><td>Lecture des tickets et menus par IA, à ta demande et avec ton accord</td><td>Photo et lignes du ticket ; informations du menu (sans prénom ni e-mail)</td><td>États-Unis</td><td>Sous-traitant, clauses contractuelles types ; pas d’entraînement des modèles</td></tr>
+              <tr><td>Resend (Plus Five Five, Inc.)</td><td>Envoi des e-mails</td><td>Adresse e-mail, contenu du message</td><td>États-Unis</td><td>Sous-traitant, clauses contractuelles types</td></tr>
+              <tr><td>OVHcloud (OVH SAS)</td><td>Nom de domaine et boîte <a href="mailto:contact@getkokon.app">contact@getkokon.app</a></td><td>Les messages que tu nous écris ; les alertes de signalement</td><td>France</td><td>Sous-traitant, Union européenne</td></tr>
+              <tr><td>GitHub, Inc. (GitHub Pages)</td><td>Hébergement de ce site</td><td>Adresse IP des visiteurs</td><td>États-Unis</td><td>Sous-traitant, cadre UE–États-Unis et clauses contractuelles types</td></tr>
+              <tr><td>Apple</td><td>Connexion avec Apple, paiement de Premium sur l’App Store, acheminement des notifications</td><td>Identifiant Apple, achat, contenu des notifications</td><td>Irlande et États-Unis</td><td>Responsable de traitement distinct, selon sa propre politique</td></tr>
+              <tr><td>Google</td><td>Connexion avec Google</td><td>Adresse e-mail, nom, photo de profil</td><td>Irlande et États-Unis</td><td>Responsable de traitement distinct, selon sa propre politique</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Nous pouvons aussi transmettre des données à une autorité qui les demande légalement (par exemple sur réquisition judiciaire).</p>
+
+        <h2>Sécurité</h2>
+        <p>Les échanges sont chiffrés (HTTPS). Chaque foyer ne voit que ses propres données : l’accès est contrôlé sur le serveur, table par table. Les fichiers sont lus par des liens signés valables une heure. Les clés des prestataires ne sont jamais dans l’app. Nous ne prenons aucune décision automatisée produisant des effets juridiques à ton égard.</p>
+
+        <h2>Tes droits</h2>
+        <p>Tu as le droit :</p>
+        <ul>
+          <li>d’accéder à tes données et d’en obtenir une copie ;</li>
+          <li>de les faire corriger (rectification) ;</li>
+          <li>de les faire effacer ;</li>
+          <li>d’en demander la limitation ;</li>
+          <li>de t’opposer à un traitement fondé sur notre intérêt légitime ;</li>
+          <li>de les récupérer dans un format lisible pour les emporter ailleurs (portabilité) ;</li>
+          <li>de retirer ton consentement à tout moment (e-mails de conseils, partage de position, allergies et régimes, envoi à l’IA), sans effet sur ce qui a été fait avant (si l’administrateur du foyer a verrouillé le partage de position d’un enfant, c’est lui qui le coupe dans KOKON ; l’enfant peut toujours refuser la position dans les Réglages de l’iPhone) ;</li>
+          <li>de donner des directives sur le sort de tes données après ton décès.</li>
+        </ul>
+        <p><strong>Comment faire.</strong> Depuis le Profil, tu peux exporter une copie de tes principales données (profil, foyers, planning, messages, propositions, courses, stock, repas, accords donnés). Pour une copie complète (documents, photos, préférences alimentaires…), écris à <a href="mailto:contact@getkokon.app">contact@getkokon.app</a>.</p>
+        <p>Depuis le Profil, tu peux aussi supprimer ton compte. La suppression efface ton compte, tes messages, tes documents personnels, ta position et tes préférences. Ce que tu as ajouté au foyer (planning, courses, repas, documents et photos du foyer) reste pour les autres membres, sans ton nom ; si tu es le dernier membre, le foyer entier est supprimé.</p>
+        <p>Tu peux corriger ton prénom et ton adresse dans le Profil. Pour toute autre demande, écris à <a href="mailto:contact@getkokon.app">contact@getkokon.app</a> : nous répondons sous un mois.</p>
+        <p>Si tu estimes que tes droits ne sont pas respectés, tu peux adresser une réclamation à la CNIL : <a href="https://www.cnil.fr/fr/plaintes">cnil.fr</a>.</p>
+
+        <h2>Modifications</h2>
+        <p>Si cette politique change de façon importante, nous te prévenons dans l’app ou par e-mail avant que le changement s’applique. La date de mise à jour figure en haut de cette page.</p>
+
+        <h2>Contact</h2>
+        <p>Une question sur tes données : <a href="mailto:contact@getkokon.app">contact@getkokon.app</a>. Responsable du traitement : Flavio Freitas, entrepreneur individuel (EI), SIRET 991 966 904 00039, 6 rue d’Armaillé, 75017 Paris, France. KOKON n’a pas désigné de délégué à la protection des données ; cette adresse est le point de contact unique.</p>
+      </div>
+    </article>
   </main>
+  <footer class="pied">
+    <div class="contenu">
+      <div>
+        <a class="logo" href="./" aria-label="KOKON, accueil">
+          <img src="assets/logo.png" alt="" width="34" height="34">
+          <span>KOKON</span>
+        </a>
+        <p class="accroche">L’app du foyer : planning, repas, courses et discussion de la famille, au même endroit.</p>
+        <p class="accroche"><a href="mailto:contact@getkokon.app">contact@getkokon.app</a></p>
+      </div>
+      <div>
+        <h2>KOKON</h2>
+        <ul>
+          <li><a href="./#fonctions">Fonctions</a></li>
+          <li><a href="./#tarifs">Tarifs</a></li>
+          <li><a href="support.html">Aide et contact</a></li>
+          <li><a href="support.html#suppression">Supprimer son compte</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Informations légales</h2>
+        <ul>
+          <li><a href="mentions-legales.html">Mentions légales</a></li>
+          <li><a href="privacy.html">Confidentialité</a></li>
+          <li><a href="cgu.html">Conditions d’utilisation</a></li>
+          <li><a href="cgv.html">Conditions de vente</a></li>
+        </ul>
+      </div>
+      <p class="bas">© 2026 KOKON. Sans publicité, sans traceur. Données hébergées dans l’Union européenne.</p>
+    </div>
+  </footer>
 </body>
 </html>
